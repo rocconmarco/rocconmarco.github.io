@@ -21,6 +21,10 @@ body {
     background-position: center;
 }
 
+body.scrollbar-visible {
+    overflow-y: auto;
+}
+
 .navbar-container {
     width: 100%;
     height: 170px;
@@ -71,7 +75,7 @@ body {
     content: "";
     height: 3px;
     width: 0;
-    background-color: #fff;
+    background-color: #ffde59;
     position: absolute;
     left: 0;
     bottom: -2px;
@@ -159,4 +163,19 @@ button:hover span {
 button:hover {
     border: none;
     color: black;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffde59;
+    border-radius: 10px;
+
 }

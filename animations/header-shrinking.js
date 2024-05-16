@@ -8,12 +8,12 @@ function scrollFunction() {
     if(document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
         navbarContainer.style.height = "100px";
         logo.style.height = "100px";
-        logo.src = "assets/images/logo-black-reduced.svg";
+        logo.src = "assets/images/alternative-logo-reduced.svg";
 
     } else {
         navbarContainer.style.height = "170px";
         logo.style.height = "100%";
-        logo.src = "assets/images/logo-black.svg";
+        logo.src = "assets/images/alternative-logo.svg";
 
     }
 }
