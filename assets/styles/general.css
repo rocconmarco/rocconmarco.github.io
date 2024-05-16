@@ -32,20 +32,20 @@
     cursor: pointer;
 }
 
-.navbar ul li {
+.pages-links li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
 
-.navbar ul li a {
+.pages-links li a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
 }
 
-.navbar ul li::after {
+.pages-links li::after {
     content: "";
     height: 3px;
     width: 0;
@@ -56,8 +56,25 @@
     transition: 0.5s;
 }
 
-.navbar ul li:hover::after {
+.pages-links li:hover::after {
     width: 100%;
+}
+
+.navbar-left-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 75px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg) brightness(103%) contrast(103%);
+    margin-left: 10px;
+}
+
+.social-icons img {
+    height: 20px;
 }
 
 .welcome-section {
