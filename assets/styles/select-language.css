@@ -1,0 +1,10 @@
+.logo-select-language-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-select-language {
+    height: 280px;
+    margin-top: 40px;
+}
