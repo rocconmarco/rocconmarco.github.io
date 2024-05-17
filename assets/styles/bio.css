@@ -1,0 +1,28 @@
+.bio-section {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    margin-top: 2%;
+}
+
+.bio-section h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.bio-section p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.bio-introduction {
+    margin-top: 0;
+}
+
+.bio-introduction img {
+    height: 350px;
+}
