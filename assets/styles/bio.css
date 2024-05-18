@@ -1,11 +1,12 @@
 .bio-section {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 .bio-section h1 {
@@ -20,9 +21,121 @@
 }
 
 .bio-introduction {
-    margin-top: 0;
+    margin-top: 7%;
+    margin-bottom: 13%;
+}
+
+.bio-introduction p {
+    line-height: 30px;
+    font-size: 20px;
 }
 
 .bio-introduction img {
     height: 350px;
+}
+
+.personal-stats {
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+.highlights {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+}
+
+.highlights h2 {
+    margin-top: 15px;
+    margin-left: 35%;
+}
+
+.highlights ul,
+.features ul {
+    margin-left: 35%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffde59;
+    text-align: left;
+    list-style: none;
+}
+
+.features ul {
+    margin-left: 15%;
+}
+
+.features img {
+    width: 250px;
+}
+
+.highlights p strong {
+    font-size: 20px;
+    color: #fff;
+}
+
+.highlights ul li strong {
+    font-size: 20px;
+    color: #fff;
+}
+
+.features {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+}
+
+.features h2 {
+    margin-top: 15px;
+    margin-left: 15%;
+}
+
+.features p {
+    margin-left: 15%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffde59;
+}
+
+.highlights-features-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bio-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    margin-left: 23%;
+    margin-top: 60px;
+}
+
+.bio-content p {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.bio-content h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.e-invece-no {
+    font-weight: bold;
+    color: #ffde59;
+}
+
+.firma {
+    display: flex;
+    flex-direction: column;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffde59;
 }
