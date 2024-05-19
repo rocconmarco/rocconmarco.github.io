@@ -1,0 +1,83 @@
+.navbar-container {
+    width: 100%;
+    height: 170px;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.navbar-right-section,
+.navbar-left-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 5%;
+    right: 5%;
+}
+
+.logo {
+    width: 170px;
+    cursor: pointer;
+}
+
+.pages-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.pages-links li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.pages-links li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #ffde59;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.pages-links li:hover::after {
+    width: 100%;
+}
+
+.navbar-left-section {
+    height: 100%;
+}
+
+.navbar-right-section {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 75px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg) brightness(103%) contrast(103%);
+    margin-left: 10px;
+}
+
+.social-icons img {
+    height: 20px;
+}

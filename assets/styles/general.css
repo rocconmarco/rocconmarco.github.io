@@ -1,19 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Poppins;
-}
-
-.banner {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url("/assets/images/background-image.jpg");
-    background-size: cover;
-    background-position: center;
+    font-family: Poppins, Helvetica, sans-serif;
 }
 
 body {
+    width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
         url("/assets/images/background-image.jpg");
@@ -25,118 +17,15 @@ body.scrollbar-visible {
     overflow-y: auto;
 }
 
-.navbar-container {
-    width: 100%;
-    height: 170px;
-    background-color: black;
-    position: fixed;
-    z-index: 100;
-    overflow: hidden;
-}
-
-.navbar-right-section,
-.navbar-left-section {
-    display: flex;
-    align-items: center;
-}
-
-.navbar {
-    width: 75%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    left: 5%;
-    right: 5%;
-}
-
-.logo {
-    width: 170px;
-    cursor: pointer;
-}
-
-.pages-links li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-    transition: 0.5s;
-}
-
-.pages-links li a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    transition: 0.5s;
-}
-
-.pages-links li::after {
-    content: "";
-    height: 3px;
-    width: 0;
-    background-color: #ffde59;
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    transition: 0.5s;
-}
-
-.pages-links li:hover::after {
-    width: 100%;
-}
-
-.navbar-left-section {
-    height: 100%;
-}
-
-.navbar-right-section {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    transition: 0.5s;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-between;
-    width: 75px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg) brightness(103%) contrast(103%);
-    margin-left: 10px;
-}
-
-.social-icons img {
-    height: 20px;
-}
-
-.welcome-section {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-}
-
-.welcome-section h1 {
-    font-size: 70px;
-    margin-top: 80px;
-}
-
-.welcome-section p {
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
-}
-
 button {
-    width: 200px;
+    width: 115px;
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
-    border-radius: 25px;
+    border-radius: 50px;
+    font-size: 16px;
     font-weight: bold;
-    border: 2px solid #fff;
+    border: 4px solid #ffde59;
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -145,10 +34,10 @@ button {
 }
 
 span {
-    background: #fff;
+    background: #ffde59;
     height: 100%;
     width: 0;
-    border-radius: 25px;
+    border-radius: 50px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -157,7 +46,7 @@ span {
 }
 
 button:hover span {
-    width: 100%;
+    width: 115px;
 }
 
 button:hover {
@@ -178,71 +67,4 @@ button:hover {
     background: #ffde59;
     border-radius: 10px;
 
-}
-
-.begin-section {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-}
-
-.begin-section h1 {
-    font-size: 70px;
-    margin-top: 120px;
-}
-
-.begin-icons {
-    margin-top: 20px;
-    margin-left: 22%;
-    margin-right: 22%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.circle-button {
-    width: 140px;
-    height: 140px;
-    border-radius: 50px;
-    position: relative;
-    perspective: 1000px;
-    cursor: pointer;
-}
-
-.circle-button img {
-    height: 140px;
-}
-
-.circle-button .front,
-.circle-button .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-    transition: transform 0.6s;
-}
-
-.circle-button .back {
-    background-image: url("/assets/icons/begin-icon-bg.svg");
-    background-size: cover;
-    background-position: center;
-    transform: rotateY(180deg);
-}
-
-.circle-button:hover .front {
-    transform: rotateY(180deg);
-}
-
-.circle-button:hover .back {
-    transform: rotateY(0deg);
 }

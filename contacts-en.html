@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - Marco Roccon | Digital Innovation & Development</title>
+
+    <!-- Favicons, compatibilità con tutti i browser -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="assets/icons/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="assets/icons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+    <!-- Font caricati -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+
+    <!-- Collegamento a file CSS -->
+
+    <link rel="stylesheet" href="/assets/styles/general.css">
+    <link rel="stylesheet" href="/assets/styles/contacts.css">
+    <link rel="stylesheet" href="/assets/styles/navbar.css">
+    <link rel="stylesheet" href="/assets/styles/footer.css">
+
+
+</head>
+
+<body>
+    <div class="contacts-body">
+        <header>
+            <div id="navbar-container" class="navbar-container">
+                <nav class="navbar">
+
+                    <div id="navbar-left-section" class="navbar-left-section">
+                        <a href="select-language.html">
+                            <img id="logo" class="logo" src="assets/images/alternative-logo.svg">
+                        </a>
+                    </div>
+                    <div id="navbar-right-section" class="navbar-right-section">
+                        <ul>
+                            <div class="pages-links">
+                                <li><a href="where-to-begin.html">Home</a></li>
+                                <li><a href="bio-en.html">Bio</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="contacts-en.html">Contacts</a></li>
+                            </div>
+                        </ul>
+                        <div class="social-icons">
+                            <a href="https://github.com/rocconmarco" target="_blank"><img src="assets/icons/github.svg"
+                                    alt=""></a>
+                            <a href="https://www.instagram.com/marco_roccon/" target="_blank"><img
+                                    src="assets/icons/instagram.svg" alt=""></a>
+                            <a href="https://it.linkedin.com/in/marcoroccon" target="_blank"><img
+                                    src="assets/icons/linkedin.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                </nav>
+
+            </div>
+        </header>
+
+        <main>
+            <section class="contacts-section">
+                <div class="contacts-introduction">
+                    <h1>Contacts</h1>
+
+                    <p>Want to share your experience?<br>
+                        Need advice on a project?<br>
+                        Interested in starting a collaboration with me?<br>
+                    <p class="call-to-action"><strong>Fill out the form below!</strong></p>
+                    </p>
+                </div>
+
+                <div class="contact-container">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <div class="contact-title">
+                            <hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="270f38e4-b4bb-46ff-ba6d-be7fccdef1b0">
+                        <input type="text" name="name" placeholder="First name" class="contact-inputs" required>
+                        <input type="text" name="last-name" placeholder="Last name" class="contact-inputs">
+                        <input type="text" name="company" placeholder="Company" class="contact-inputs" required>
+                        <input type="email" name="email" placeholder="Email address" class="contact-inputs">
+                        <textarea name="message" placeholder="Write your message here" class="contact-inputs"
+                            required></textarea>
+                        <div class="submit-button">
+                            <button type="submit">Submit<span></span></button>
+                        </div>
+                    </form>
+                </div>
+
+
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container" style="margin-top: 1100px;">
+                &#169; 2024 Marco Roccon. All rights reserved.
+            </div>
+        </footer>
+
+
+
+        
+    </div>
+    
+
+    <script src="animations/header-shrinking.js"></script>
+    
+</body>
+
+</html>
