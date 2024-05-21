@@ -64,10 +64,10 @@
                         <div class="hamburger-menu">
                             <a href="#"><img id="hamburger-image" src="assets/icons/list.svg" alt=""></a>
                             <ul class="dropdown">
-                                <li><a href="da-dove-cominciare.html">Home</a></li>
-                                <li><a href="bio-ita.html">Bio</a></li>
-                                <li><a href="projects-ita.html">Progetti</a></li>
-                                <li><a href="contacts-ita.html">Contatti</a></li>
+                                <li><a href="where-to-begin.html">Home</a></li>
+                                <li><a href="bio-en.html">Bio</a></li>
+                                <li><a href="projects-en.html">Progetti</a></li>
+                                <li><a href="contacts-en.html">Contatti</a></li>
                             </ul>
                         </div>
                     </div>
@@ -291,20 +291,26 @@
 
         <script src="animations/header-shrinking.js"></script>
         <script>
-            document.addEventListener("DOMContentLoaded", function() {
+            document.addEventListener("DOMContentLoaded", function () {
                 const hamburgerMenu = document.querySelector('.hamburger-menu');
                 const dropdownMenu = hamburgerMenu.querySelector('ul.dropdown');
-        
-                hamburgerMenu.addEventListener('click', function(event) {
+
+                // Aggiunge/rimuove la classe 'open' per mostrare/nascondere il menu
+                hamburgerMenu.querySelector('img').addEventListener('click', function (event) {
                     event.preventDefault(); // Previene il comportamento predefinito del link
-                    hamburgerMenu.classList.toggle('open'); // Aggiunge/rimuove la classe 'open' per mostrare/nascondere il menu
+                    hamburgerMenu.classList.toggle('open');
                 });
-        
+
                 // Aggiungiamo un evento per chiudere il menu cliccando fuori di esso
-                document.addEventListener('click', function(event) {
+                document.addEventListener('click', function (event) {
                     if (!hamburgerMenu.contains(event.target)) {
                         hamburgerMenu.classList.remove('open');
                     }
+                });
+
+                // Previene che i click sui link chiudano il menu
+                dropdownMenu.addEventListener('click', function (event) {
+                    event.stopPropagation();
                 });
             });
         </script>
