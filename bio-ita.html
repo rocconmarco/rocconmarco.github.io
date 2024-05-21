@@ -28,45 +28,52 @@
     <link rel="stylesheet" href="/assets/styles/bio.css">
     <link rel="stylesheet" href="/assets/styles/navbar.css">
     <link rel="stylesheet" href="/assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/responsive-bio.css">
 
 
 </head>
 
 <body>
-    <div class="bio-body">
-        <header>
-            <div id="navbar-container" class="navbar-container">
-                <nav class="navbar">
-
-                    <div id="navbar-left-section" class="navbar-left-section">
-                        <a href="index.html">
-                            <img id="logo" class="logo" src="assets/images/alternative-logo.svg">
-                        </a>
-                    </div>
-                    <div id="navbar-right-section" class="navbar-right-section">
-                        <ul>
-                            <div class="pages-links">
-                                <li><a href="da-dove-cominciare.html">Home</a></li>
-                                <li><a href="bio-ita.html">Bio</a></li>
-                                <li><a href="projects-ita.html">Progetti</a></li>
-                                <li><a href="contacts-ita.html">Contatti</a></li>
-                            </div>
-                        </ul>
-                        <div class="social-icons">
-                            <a href="https://github.com/rocconmarco" target="_blank"><img src="assets/icons/github.svg"
-                                    alt=""></a>
-                            <a href="https://www.instagram.com/marco_roccon/" target="_blank"><img
-                                    src="assets/icons/instagram.svg" alt=""></a>
-                            <a href="https://it.linkedin.com/in/marcoroccon" target="_blank"><img
-                                    src="assets/icons/linkedin.svg" alt=""></a>
+    <header>
+        <div id="navbar-container" class="navbar-container">
+            <nav class="navbar">
+                <div id="navbar-left-section" class="navbar-left-section">
+                    <a href="index.html">
+                        <img id="logo" class="logo" src="assets/images/alternative-logo.svg">
+                    </a>
+                </div>
+                <div id="navbar-right-section" class="navbar-right-section">
+                    <ul>
+                        <div class="pages-links">
+                            <li><a href="da-dove-cominciare.html">Home</a></li>
+                            <li><a href="bio-ita.html">Bio</a></li>
+                            <li><a href="projects-ita.html">Progetti</a></li>
+                            <li><a href="contacts-ita.html">Contatti</a></li>
                         </div>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://github.com/rocconmarco" target="_blank"><img src="assets/icons/github.svg"
+                                alt=""></a>
+                        <a href="https://www.instagram.com/marco_roccon/" target="_blank"><img
+                                src="assets/icons/instagram.svg" alt=""></a>
+                        <a href="https://it.linkedin.com/in/marcoroccon" target="_blank"><img
+                                src="assets/icons/linkedin.svg" alt=""></a>
                     </div>
 
-                </nav>
-
-            </div>
-        </header>
-
+                    <div class="hamburger-menu">
+                        <a href="#"><img id="hamburger-image" src="assets/icons/list.svg" alt=""></a>
+                        <ul class="dropdown">
+                            <li><a href="da-dove-cominciare.html">Home</a></li>
+                            <li><a href="bio-ita.html">Bio</a></li>
+                            <li><a href="projects-ita.html">Progetti</a></li>
+                            <li><a href="contacts-ita.html">Contatti</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="bio-body">
         <main>
             <section class="bio-section">
                 <div class="bio-introduction">
@@ -89,6 +96,29 @@
                             <li>Titoli di studio: <strong>&Egrave; complicato (leggi sotto)</strong></li>
                             <li>Passioni: <strong>Tecnologia, lingue, finanza</strong></li>
                             <li>Sogni: <strong>Rendere il mondo un posto bello</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden-highlights">
+                        <h2>Highlights</h2>
+                        <ul>
+                            <li>Età:</li>
+                            <li><strong>26</strong></li>
+                            <hr>
+                            <li>Nato a:
+                            <li><strong>Castelfranco Veneto (TV)</strong></li>
+                            <hr>
+                            <li>Occupazione:</li>
+                            <li><strong>Studente</strong></li>
+                            <hr>
+                            <li>Titoli di studio:
+                            <li><strong>&Egrave; complicato (leggi sotto)</strong></li>
+                            <hr>
+                            <li>Passioni:</li>
+                            <li><strong>Tecnologia, lingue, finanza</strong></li>
+                            <hr>
+                            <li>Sogni:</li>
+                            <li><strong>Rendere il mondo un posto bello</strong></li>
                         </ul>
                     </div>
 
@@ -245,14 +275,34 @@
 
             </section>
         </main>
-        <footer>
-            <div class="footer-container" style="margin-top: 5350px;">
-                &#169; 2024 Marco Roccon. Tutti i diritti riservati.
-            </div>
-        </footer>
+        
 
         <script src="animations/header-shrinking.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const hamburgerMenu = document.querySelector('.hamburger-menu');
+                const dropdownMenu = hamburgerMenu.querySelector('ul.dropdown');
+        
+                hamburgerMenu.addEventListener('click', function(event) {
+                    event.preventDefault(); // Previene il comportamento predefinito del link
+                    hamburgerMenu.classList.toggle('open'); // Aggiunge/rimuove la classe 'open' per mostrare/nascondere il menu
+                });
+        
+                // Aggiungiamo un evento per chiudere il menu cliccando fuori di esso
+                document.addEventListener('click', function(event) {
+                    if (!hamburgerMenu.contains(event.target)) {
+                        hamburgerMenu.classList.remove('open');
+                    }
+                });
+            });
+        </script>
     </div>
+    <footer>
+        <div class="footer-container">
+            &#169; 2024 Marco Roccon. Tutti i diritti riservati.
+        </div>
+    </footer>
 </body>
 
 </html>

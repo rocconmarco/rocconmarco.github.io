@@ -6,8 +6,6 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
         url("/assets/images/background-image.jpg");
     background-size: cover;
@@ -18,7 +16,7 @@ body.scrollbar-visible {
     overflow-y: auto;
 }
 
-/*
+
 button {
     width: 115px;
     padding: 15px 0;
@@ -34,9 +32,6 @@ button {
     position: relative;
     overflow: hidden;
 }
-*/
-
-
 
 span {
     background: #ffde59;
@@ -59,8 +54,6 @@ button:hover {
     color: black;
 }
 
-
-
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -73,5 +66,4 @@ button:hover {
 ::-webkit-scrollbar-thumb {
     background: #ffde59;
     border-radius: 10px;
-
 }

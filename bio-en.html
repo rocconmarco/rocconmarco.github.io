@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="/assets/styles/bio.css">
     <link rel="stylesheet" href="/assets/styles/navbar.css">
     <link rel="stylesheet" href="/assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/responsive-bio.css">
 
 
 </head>
@@ -59,6 +60,16 @@
                             <a href="https://it.linkedin.com/in/marcoroccon" target="_blank"><img
                                     src="assets/icons/linkedin.svg" alt=""></a>
                         </div>
+
+                        <div class="hamburger-menu">
+                            <a href="#"><img id="hamburger-image" src="assets/icons/list.svg" alt=""></a>
+                            <ul class="dropdown">
+                                <li><a href="da-dove-cominciare.html">Home</a></li>
+                                <li><a href="bio-ita.html">Bio</a></li>
+                                <li><a href="projects-ita.html">Progetti</a></li>
+                                <li><a href="contacts-ita.html">Contatti</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                 </nav>
@@ -88,6 +99,29 @@
                             <li>Degrees: <strong>It's complicated (read below)</strong></li>
                             <li>Passions: <strong>Technology, languages, finance</strong></li>
                             <li>Dreams: <strong>Make the world a better place</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden-highlights">
+                        <h2>Highlights</h2>
+                        <ul>
+                            <li>Age:</li>
+                            <li><strong>26</strong></li>
+                            <hr>
+                            <li>Born in:
+                            <li><strong>Castelfranco Veneto (TV)</strong></li>
+                            <hr>
+                            <li>Occupation:</li>
+                            <li><strong>Student</strong></li>
+                            <hr>
+                            <li>Degrees:
+                            <li><strong>It's complicated (read below)</strong></li>
+                            <hr>
+                            <li>Passions:</li>
+                            <li><strong>Technology, languages, finance</strong></li>
+                            <hr>
+                            <li>Dreams:</li>
+                            <li><strong>Make the world a better place</strong></li>
                         </ul>
                     </div>
 
@@ -250,12 +284,30 @@
             </section>
         </main>
         <footer>
-            <div class="footer-container" style="margin-top: 5350px;">
+            <div class="footer-container">
                 &#169; 2024 Marco Roccon. All rights reserved.
             </div>
         </footer>
 
         <script src="animations/header-shrinking.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const hamburgerMenu = document.querySelector('.hamburger-menu');
+                const dropdownMenu = hamburgerMenu.querySelector('ul.dropdown');
+        
+                hamburgerMenu.addEventListener('click', function(event) {
+                    event.preventDefault(); // Previene il comportamento predefinito del link
+                    hamburgerMenu.classList.toggle('open'); // Aggiunge/rimuove la classe 'open' per mostrare/nascondere il menu
+                });
+        
+                // Aggiungiamo un evento per chiudere il menu cliccando fuori di esso
+                document.addEventListener('click', function(event) {
+                    if (!hamburgerMenu.contains(event.target)) {
+                        hamburgerMenu.classList.remove('open');
+                    }
+                });
+            });
+        </script>
     </div>
 </body>
 

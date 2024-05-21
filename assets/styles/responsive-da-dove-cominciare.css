@@ -1,0 +1,142 @@
+@media (max-width: 600px) {
+    .logo-select-language-container {
+        text-align: center;
+        padding: 10px;
+        height: 40vh;
+    }
+
+    .logo-select-language {
+        height: 37vh;
+    }
+
+    .begin-section {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .begin-section h1 {
+        font-size: 40px; /* Riduce la dimensione del titolo per dispositivi mobili */
+        margin-top: 40px;
+    }
+
+    .begin-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .circle-button {
+        width: 100px; /* Riduce la dimensione dei bottoni */
+        height: 100px;
+        margin: 10px 0;
+    }
+
+    .circle-button img {
+        height: 100px;
+    }
+
+    .circle-button .front,
+    .circle-button .back {
+        font-size: 16px; /* Riduce la dimensione del testo */
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .logo-select-language-container {
+        text-align: left;
+        padding: 0px;
+        height: 60vh;
+    }
+
+    .logo-select-language {
+        height: 43vh;
+    }
+
+    .begin-section {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .begin-section h1 {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    .begin-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px 10%;
+    }
+
+    .circle-button {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+    }
+
+    .circle-button img {
+        height: 120px;
+    }
+
+    .circle-button .front,
+    .circle-button .back {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .logo-select-language-container {
+        text-align: left;
+        padding: 0px;
+        height: 60vh;
+    }
+
+    .logo-select-language {
+        height: 43vh;
+    }
+
+    .begin-section {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+
+    .begin-section h1 {
+        font-size: 70px;
+        margin-top: 200px;
+    }
+
+    .begin-icons {
+        margin-top: 20px;
+        margin-left: 22%;
+        margin-right: 22%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .circle-button {
+        width: 140px;
+        height: 140px;
+        border-radius: 50px;
+        position: relative;
+        perspective: 1000px;
+        cursor: pointer;
+    }
+
+    .circle-button img {
+        height: 140px;
+    }
+
+    .circle-button .front,
+    .circle-button .back {
+        font-size: 22px;
+    }
+}
