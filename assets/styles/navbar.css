@@ -121,7 +121,7 @@
         padding: 0;
         margin: 0;
         position: absolute;
-        top: 60px;
+        top: 60x;
         right: 0;
         display: none;
         width: 150px;
@@ -148,5 +148,9 @@
 
     .hamburger-menu.open ul.dropdown {
         display: block;
+    }
+
+    .hamburger-menu ul.dropdown li a img {
+        height: 20px;
     }
 }

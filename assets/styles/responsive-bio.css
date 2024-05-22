@@ -83,6 +83,22 @@
         border: none;
     }
 
+    .hidden-highlights .titoli-di-studio {
+        list-style: disc;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-left: 26%;
+        margin-right: 17%;
+        text-align: start;
+    }
+    
+    .hidden-highlights .titoli-di-studio li::marker {
+        color: #ffde59;
+    }
+
 
 }
 
@@ -145,6 +161,22 @@
         height: 8px;
         color: transparent;
         border: none;
+    }
+
+    .hidden-highlights .titoli-di-studio {
+        list-style: disc;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-left: 26%;
+        margin-right: 17%;
+        text-align: start;
+    }
+    
+    .hidden-highlights .titoli-di-studio li::marker {
+        color: #ffde59;
     }
 }
 

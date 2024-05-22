@@ -1,23 +1,28 @@
 .projects-section {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
     color: #fff;
     margin-top: 5%;
 }
 
+.projects-body {
+    margin-top: 170px;
+    min-height: auto;
+}
+
+
+.projects-section h1 {
+    font-size: 70px;
+}
+
 .projects-section p {
-    margin-top: 10px;
     font-weight: 100;
     line-height: 25px;
 }
 
 .projects-introduction {
-    margin-top: 7%;
-    margin-bottom: 13%;
+    margin-bottom: 3%;
 }
 
 .projects-introduction p {
@@ -25,21 +30,16 @@
     font-size: 20px;
 }
 
-.projects-section h1 {
-    font-size: 70px;
-    margin-top: 85px;
-}
-
 .projects-container {
-    margin-top: -150px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
 }
 
 .project-card {
     background-color: #ffde59;
+    width: 30%;
+    height: 100%;
 }
 
 .project-link {
@@ -53,7 +53,8 @@
 
 .project-title {
     font-size: 20px;
-    margin-bottom: 0.75rem;;
+    margin-bottom: 0.75rem;
+    ;
 }
 
 .project-description {
@@ -78,5 +79,7 @@
 }
 
 .project-image {
-    height: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }

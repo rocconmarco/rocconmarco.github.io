@@ -16,8 +16,10 @@
     }
 
     .begin-section h1 {
-        font-size: 40px; /* Riduce la dimensione del titolo per dispositivi mobili */
+        font-size: 35px;
         margin-top: 40px;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .begin-icons {
@@ -28,7 +30,7 @@
     }
 
     .circle-button {
-        width: 100px; /* Riduce la dimensione dei bottoni */
+        width: 100px;
         height: 100px;
         margin: 10px 0;
     }
@@ -39,7 +41,7 @@
 
     .circle-button .front,
     .circle-button .back {
-        font-size: 16px; /* Riduce la dimensione del testo */
+        font-size: 16px;
     }
 
 }

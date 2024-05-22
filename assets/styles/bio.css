@@ -1,14 +1,14 @@
+.bio-body {
+    margin-top: 170px;
+    min-height: auto;
+}
+
 .bio-section {
     width: 100%;
     height: 100%;
     text-align: center;
     color: #fff;
     margin-top: 5%;
-}
-
-.bio-body {
-    margin-top: 170px;
-    min-height: auto;
 }
 
 .bio-section h1 {
@@ -22,7 +22,7 @@
 }
 
 .bio-introduction {
-    margin-bottom: 13%;
+    margin-bottom: 7%;
 }
 
 .bio-introduction p {
@@ -99,7 +99,21 @@
 .highlights-features-container {
     display: flex;
     flex-direction: row;
+    align-items: start;
+    margin-bottom: 5%;
 
+}
+
+.highlights .titoli-di-studio {
+    list-style: disc;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+}
+
+.highlights .titoli-di-studio li::marker {
+    color: #ffde59;
 }
 
 .bio-content {

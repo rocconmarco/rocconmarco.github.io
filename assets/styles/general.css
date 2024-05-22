@@ -10,6 +10,7 @@ body {
         url("/assets/images/background-image.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 body.scrollbar-visible {
